@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="viewRepresentation">
+<entry key="showLegend" type="xboolean" value="false"/>
+<entry key="autoRange" type="xboolean" value="true"/>
+<entry key="useDomainInformation" type="xboolean" value="false"/>
+<entry key="showGrid" type="xboolean" value="true"/>
+<entry key="showCrosshair" type="xboolean" value="false"/>
+<entry key="snapToPoints" type="xboolean" value="false"/>
+<entry key="resizeToWindow" type="xboolean" value="true"/>
+<entry key="enableViewConfiguration" type="xboolean" value="true"/>
+<entry key="enableTitleChange" type="xboolean" value="true"/>
+<entry key="enableSubtitleChange" type="xboolean" value="true"/>
+<entry key="enableXColumnChange" type="xboolean" value="true"/>
+<entry key="enableYColumnChange" type="xboolean" value="true"/>
+<entry key="enableXAxisLabelEdit" type="xboolean" value="true"/>
+<entry key="enableYAxisLabelEdit" type="xboolean" value="true"/>
+<entry key="enableDotSizeChange" type="xboolean" value="false"/>
+<entry key="enablePanning" type="xboolean" value="true"/>
+<entry key="enableZooming" type="xboolean" value="true"/>
+<entry key="enableDragZooming" type="xboolean" value="false"/>
+<entry key="showZoomResetButton" type="xboolean" value="false"/>
+<entry key="enableSelection" type="xboolean" value="true"/>
+<entry key="enableRectangleSelection" type="xboolean" value="true"/>
+<entry key="enableLassoSelection" type="xboolean" value="false"/>
+<entry key="imageWidth" type="xint" value="800"/>
+<entry key="imageHeight" type="xint" value="600"/>
+<entry key="backgroundColor" type="xstring" value="rgba(255,255,255,1.0)"/>
+<entry key="dataAreaColor" type="xstring" value="rgba(255,255,255,1.0)"/>
+<entry key="gridColor" type="xstring" value="rgba(230,230,230,1.0)"/>
+<entry key="hasDataset" type="xboolean" value="true"/>
+<config key="dataset">
+<entry key="tableID" type="xstring" value="eff8b983-0949-409e-a6e2-ae12afd2b902"/>
+<config key="columnKeys">
+<entry key="array-size" type="xint" value="7"/>
+<entry key="0" type="xstring" value="own_team_rating"/>
+<entry key="1" type="xstring" value="opponent_team_rating"/>
+<entry key="2" type="xstring" value="hight"/>
+<entry key="3" type="xstring" value="position"/>
+<entry key="4" type="xstring" value="PPG"/>
+<entry key="5" type="xstring" value="Point"/>
+<entry key="6" type="xstring" value="Class"/>
+</config>
+<config key="columnColors">
+<entry key="array-size" type="xint" value="7"/>
+<entry key="0" type="xstring" isnull="true" value=""/>
+<entry key="1" type="xstring" isnull="true" value=""/>
+<entry key="2" type="xstring" isnull="true" value=""/>
+<entry key="3" type="xstring" isnull="true" value=""/>
+<entry key="4" type="xstring" isnull="true" value=""/>
+<entry key="5" type="xstring" isnull="true" value=""/>
+<entry key="6" type="xstring" isnull="true" value=""/>
+</config>
+<config key="dateTimeFormats">
+<entry key="array-size" type="xint" value="7"/>
+<entry key="0" type="xstring" isnull="true" value=""/>
+<entry key="1" type="xstring" isnull="true" value=""/>
+<entry key="2" type="xstring" isnull="true" value=""/>
+<entry key="3" type="xstring" isnull="true" value=""/>
+<entry key="4" type="xstring" isnull="true" value=""/>
+<entry key="5" type="xstring" isnull="true" value=""/>
+<entry key="6" type="xstring" isnull="true" value=""/>
+</config>
+<entry key="colPropsSize" type="xint" value="0"/>
+<entry key="numRows" type="xint" value="3"/>
+<config key="row_0">
+<entry key="rowKey" type="xstring" value="cluster_0"/>
+<config key="values">
+<entry key="array-size" type="xint" value="7"/>
+<entry key="0" type="xstring" value="1.1526315789473685"/>
+<entry key="1" type="xstring" value="0.9684210526315788"/>
+<entry key="2" type="xstring" value="208.47368421052633"/>
+<entry key="3" type="xstring" value="4.7894736842105265"/>
+<entry key="4" type="xstring" value="8.726315789473684"/>
+<entry key="5" type="xstring" value="10.31578947368421"/>
+<entry key="6" type="xstring" value="1.5263157894736843"/>
+</config>
+<entry key="numProperties" type="xint" value="1"/>
+<config key="property_0">
+<entry key="key" type="xstring" value="color"/>
+<entry key="value" type="xstring" value="#AF1B1B"/>
+</config>
+</config>
+<config key="row_1">
+<entry key="rowKey" type="xstring" value="cluster_1"/>
+<config key="values">
+<entry key="array-size" type="xint" value="7"/>
+<entry key="0" type="xstring" value="4.41875"/>
+<entry key="1" type="xstring" value="-0.043749999999999845"/>
+<entry key="2" type="xstring" value="197.8125"/>
+<entry key="3" type="xstring" value="2.0625"/>
+<entry key="4" type="xstring" value="20.39375"/>
+<entry key="5" type="xstring" value="22.125"/>
+<entry key="6" type="xstring" value="2.6875"/>
+</config>
+<entry key="numProperties" type="xint" value="1"/>
+<config key="property_0">
+<entry key="key" type="xstring" value="color"/>
+<entry key="value" type="xstring" value="#404040"/>
+</config>
+</config>
+<config key="row_2">
+<entry key="rowKey" type="xstring" value="cluster_2"/>
+<config key="values">
+<entry key="array-size" type="xint" value="7"/>
+<entry key="0" type="xstring" value="-1.2444444444444442"/>
+<entry key="1" type="xstring" value="1.7277777777777776"/>
+<entry key="2" type="xstring" value="196.94444444444446"/>
+<entry key="3" type="xstring" value="2.111111111111111"/>
+<entry key="4" type="xstring" value="7.283333333333333"/>
+<entry key="5" type="xstring" value="8.555555555555555"/>
+<entry key="6" type="xstring" value="1.1666666666666667"/>
+</config>
+<entry key="numProperties" type="xint" value="1"/>
+<config key="property_0">
+<entry key="key" type="xstring" value="color"/>
+<entry key="value" type="xstring" value="#FF0000"/>
+</config>
+</config>
+<entry key="numColorModels" type="xint" value="1"/>
+<entry key="type0" type="xstring" value="range"/>
+<config key="colorModel_0">
+<entry key="title" type="xstring" value="own_team_rating"/>
+<config key="rangeValues">
+<entry key="array-size" type="xint" value="2"/>
+<entry key="0" type="xdouble" value="-1.2444444444444442"/>
+<entry key="1" type="xdouble" value="4.41875"/>
+</config>
+<config key="colors">
+<entry key="array-size" type="xint" value="2"/>
+<entry key="0" type="xstring" value="#FF0000"/>
+<entry key="1" type="xstring" value="#404040"/>
+</config>
+</config>
+<config key="missingValueColumns">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+</config>
+<entry key="displayFullscreenButton" type="xboolean" value="true"/>
+<entry key="enableShowSelectedOnly" type="xboolean" value="true"/>
+<config key="subscriptionFilterIds">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<entry key="enableSwitchLegend" type="xboolean" value="true"/>
+<entry key="showWarningInView" type="xboolean" value="true"/>
+<entry key="hasWarnings" type="xboolean" value="false"/>
+<entry key="reportOnMissingValues" type="xboolean" value="true"/>
+<config key="dateTimeFormats">
+<entry key="globalDateTimeLocale" type="xstring" value="en"/>
+<entry key="globalDateFormat" type="xstring" value="YYYY-MM-DD"/>
+<entry key="globalLocalDateFormat" type="xstring" value="YYYY-MM-DD"/>
+<entry key="globalLocalDateTimeFormat" type="xstring" value="YYYY-MM-DD"/>
+<entry key="globalLocalTimeFormat" type="xstring" value="HH:mm:ss"/>
+<entry key="globalZonedDateTimeFormat" type="xstring" value="YYYY-MM-DD z"/>
+<entry key="timezone" type="xstring" value="Europe/Moscow"/>
+</config>
+<entry key="enforceOrigin" type="xboolean" value="false"/>
+</config>

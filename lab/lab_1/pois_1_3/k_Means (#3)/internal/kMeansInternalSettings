@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="kMeans">
+<entry key="dimensions" type="xint" value="10"/>
+<entry key="ignoredColumns" type="xint" value="3"/>
+<config key="clusterCoverage">
+<entry key="array-size" type="xint" value="3"/>
+<entry key="0" type="xint" value="19"/>
+<entry key="1" type="xint" value="16"/>
+<entry key="2" type="xint" value="18"/>
+</config>
+<config key="kMeansCluster0">
+<entry key="array-size" type="xint" value="7"/>
+<entry key="0" type="xdouble" value="1.1526315789473685"/>
+<entry key="1" type="xdouble" value="0.9684210526315788"/>
+<entry key="2" type="xdouble" value="208.47368421052633"/>
+<entry key="3" type="xdouble" value="4.7894736842105265"/>
+<entry key="4" type="xdouble" value="8.726315789473684"/>
+<entry key="5" type="xdouble" value="10.31578947368421"/>
+<entry key="6" type="xdouble" value="1.5263157894736843"/>
+</config>
+<config key="kMeansCluster1">
+<entry key="array-size" type="xint" value="7"/>
+<entry key="0" type="xdouble" value="4.41875"/>
+<entry key="1" type="xdouble" value="-0.043749999999999845"/>
+<entry key="2" type="xdouble" value="197.8125"/>
+<entry key="3" type="xdouble" value="2.0625"/>
+<entry key="4" type="xdouble" value="20.39375"/>
+<entry key="5" type="xdouble" value="22.125"/>
+<entry key="6" type="xdouble" value="2.6875"/>
+</config>
+<config key="kMeansCluster2">
+<entry key="array-size" type="xint" value="7"/>
+<entry key="0" type="xdouble" value="-1.2444444444444442"/>
+<entry key="1" type="xdouble" value="1.7277777777777776"/>
+<entry key="2" type="xdouble" value="196.94444444444446"/>
+<entry key="3" type="xdouble" value="2.111111111111111"/>
+<entry key="4" type="xdouble" value="7.283333333333333"/>
+<entry key="5" type="xdouble" value="8.555555555555555"/>
+<entry key="6" type="xdouble" value="1.1666666666666667"/>
+</config>
+<config key="FeatureNames">
+<entry key="array-size" type="xint" value="10"/>
+<entry key="0" type="xstring" value="own_team_rating"/>
+<entry key="1" type="xstring" value="opponent_team_rating"/>
+<entry key="2" type="xstring" value="hight"/>
+<entry key="3" type="xstring" value="position"/>
+<entry key="4" type="xstring" value="PPG"/>
+<entry key="5" type="xstring" value="Point"/>
+<entry key="6" type="xstring" value="Class"/>
+<entry key="7" type="xstring" isnull="true" value=""/>
+<entry key="8" type="xstring" isnull="true" value=""/>
+<entry key="9" type="xstring" isnull="true" value=""/>
+</config>
+</config>

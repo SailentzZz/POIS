@@ -1,0 +1,94 @@
+package mirea.pois.arakelyan;
+dialect  "java"
+global Double baseTariff
+
+rule "calculate territorial multiplier"
+    when
+        $CarInsurance: CarInsurance(car.owner.getRegionNumber() >= 0)
+    then
+        $CarInsurance.setRegionalMultiplier(
+                getTerritorialMultiplier($CarInsurance.getCar().getOwner().getRegionNumber())
+        );
+        System.out.println("Коэффициент Т: " + $CarInsurance.getRegionalMultiplier());
+end
+
+rule "calculate age-exp multiplier"
+    when
+        $CarInsurance: CarInsurance(car.owner.getAge() >= 18, car.owner.getExperience() >= 0)
+    then
+        $CarInsurance.setAgeExpMultiplier(getAgeExpMultiplier(
+                $CarInsurance.getCar().getOwner().getAge(),
+                $CarInsurance.getCar().getOwner().getExperience()
+            ));
+        System.out.println("Коэффициент ВС: " + $CarInsurance.getAgeExpMultiplier());
+end
+
+rule "calculate ko multiplier"
+    when
+        $CarInsurance: CarInsurance(car.getAllowedOwners() > 0)
+    then
+        $CarInsurance.setKOMultiplier(getKOMultiplier($CarInsurance.getCar().getAllowedOwners()));
+        System.out.println("Коэффициент КО: " + $CarInsurance.getKOMultiplier());
+end
+
+rule "calculate hp multiplier"
+    when
+        $CarInsurance: CarInsurance(car.getHp() > 0)
+    then
+        $CarInsurance.setHPMultiplier(getHPMultiplier($CarInsurance.getCar().getHp()));
+        System.out.println("Коэффициент КМ: " + $CarInsurance.getHPMultiplier());
+end
+
+rule "calculate insurance"
+    when
+        $CarInsurance: CarInsurance()
+    then
+        if ( $CarInsurance.areMultipliersAvailable()){
+            $CarInsurance.calculatePrice();
+            System.out.println("Финальная цена страхования c тарифом \""
+            + baseTariff
+            + "\" и коэффициентом бонус-малус \""
+            + $CarInsurance.getCar().getOwner().getBonusMalus()
+            + "\" : " + $CarInsurance.getFinalSum());
+        }
+        else System.out.println("Не все коэффициенты оказались подсчитаны");
+end
+
+function Double getHPMultiplier(Integer hp) {
+        if (hp <= 150) {
+            if (hp <= 120) {
+                if (hp <= 100) {
+                    if (hp <= 70){
+                        if (hp <= 50){
+                            return 0.6;
+                        }
+                        return 1.0;
+                    }
+                    return 1.1;
+                }
+                return 1.2;
+            }
+            return 1.4;
+        }
+        else return 1.6;
+}
+
+function Double getKOMultiplier(Integer allowedOwners) {
+    return allowedOwners > 1 ? 1.8 : 1.0;
+}
+
+function Double getAgeExpMultiplier(Integer age, Integer exp){
+    if (exp <= 3) return age <= 22 ? 1.8 : 1.7;
+    else return age <= 22 ? 1.6 : 1;
+}
+
+function Double getTerritorialMultiplier(Integer terInd){
+    switch (terInd) {
+        case 99:
+            return 2.0;
+        case 98:
+            return 1.8;
+        default:
+            return 1.0;
+    }
+}
